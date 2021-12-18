@@ -1,0 +1,19 @@
+domain: org.wenbing
+layout:
+- go.kubebuilder.io/v3
+plugins:
+  manifests.sdk.operatorframework.io/v2: {}
+  scorecard.sdk.operatorframework.io/v2: {}
+projectName: wenbing-operator
+repo: github.com/wenbingz/wenbing-operator
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: org.wenbing
+  group: example.wenbing
+  kind: WenbingCustom
+  path: github.com/wenbingz/wenbing-operator/api/v1alpha1
+  version: v1alpha1
+version: "3"

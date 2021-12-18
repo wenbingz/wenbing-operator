@@ -1,0 +1,20 @@
+# permissions for end users to view wenbingcustoms.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: wenbingcustom-viewer-role
+rules:
+- apiGroups:
+  - example.wenbing.org.wenbing
+  resources:
+  - wenbingcustoms
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - example.wenbing.org.wenbing
+  resources:
+  - wenbingcustoms/status
+  verbs:
+  - get

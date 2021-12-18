@@ -1,0 +1,6 @@
+apiVersion: example.wenbing.org.wenbing/v1alpha1
+kind: WenbingCustom
+metadata:
+  name: wenbingcustom-sample
+spec:
+  # Add fields here
