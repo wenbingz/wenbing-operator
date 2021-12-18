@@ -90,6 +90,6 @@ func (r *WenbingCustomReconciler) Reconcile(ctx context.Context, req ctrl.Reques
 // SetupWithManager sets up the controller with the Manager.
 func (r *WenbingCustomReconciler) SetupWithManager(mgr ctrl.Manager) error {
 	return ctrl.NewControllerManagedBy(mgr).
-		For(&examplewenbingv1alpha1.WenbingCustom{}).
+		For(&mydomainv1alpha1.WenbingCustom{}).
 		Complete(r)
 }
